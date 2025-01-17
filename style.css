@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    font-family: "Inconsolata", serif;
+}
+body{
+    margin:0;
+    padding:0;
+    }
+html{
+    scroll-behavior: smooth;
+}
+    /* nav bar */
+.header a{
+    text-decoration: none;  
+    cursor: pointer;  
+    color:white;
+    text-align: center;
+    padding:8px;
+    font-size: small;
+    width: 100%;     
+    }
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding:8px;
+    position:fixed;
+    top:0px;
+    width:100%;
+    z-index: 999;
+    }
+.header a:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    }
+nav:hover a{
+    color:black;
+    pointer-events:none;
+    }
+nav{
+    width:100%;
+    text-align: center;
+    padding:8px;
+    }
+    /* main image or home section */
+.image-con>img{
+    width: 100%;
+    height: 600px;
+    background-position: center center;
+}
+.image-con .text1{
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 5px;
+}
+.image-con .text2{
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    color: white;
+}
+.image-con .text{
+    position: absolute;
+    top: 145px;
+    left: 650px;
+    color: white;
+    font-size: 4rem;
+}
+.image-con .text0{
+    position: absolute;
+    top: 240px;
+    left: 650px;
+    color: white;
+    font-size: 4rem;
+}
+/* about section */
+.sub-con{
+    width: 850px;
+    height: 1000px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+.image-con+p{
+    background-color: black;
+    color: white;
+    padding: 4px;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: x-large;
+}
+.sub-con p{
+    font-size: large;
+    font-style: normal;
+}
+.summary{
+    /* font-family: 'Times New Roman', Times, serif; */
+    line-height: 25px;
+}
+.sub-con .transparentBox{
+    color: #000;
+    background-color: whitesmoke;
+    border-left: 6px solid rgb(152, 156, 159);
+    padding: 7px;
+    line-height: 1.5;
+    padding-left: 19px;
+    padding-right: 5px;
+}
+.sub-con>.cafe{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 480px;
+}
+.hours,.address{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* menu section */
+.sub-con>.menu{
+    text-align: center;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    font-size: x-large;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+/* eat and drink */
+.sub-nav {
+    display: block;
+    justify-content: center;
+    gap: 350px;
+    border: 2px solid lightgrey;
+    padding: 5px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.eat-label, .drink-label{
+    border-radius: 2px;
+    cursor: pointer;
+    width: 27%;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    font-size: large;
+}
+.eat-label {
+    position: absolute;
+    left: 23%;
+}
+.drink-label{
+    position: absolute;
+    left: 50%;
+}
+.sub-nav1{
+    display: block;
+}
+.sub-nav1, .sub-nav2 {
+    padding: 30px;
+    overflow: hidden;
+    display: none;
+}
+.normal, .normal1 {
+    margin-bottom: 50px;
+}
+.bold, .bold1 {
+    margin-top: 50px;
+}
+.sub-nav input{
+    display: none;
+}
+.sub-nav>label{
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+/* Show sub-nav1 when the "eat" radio button is checked */
+#eat:checked ~ .sub-nav1{
+    display: block;
+}
+
+/* Hide sub-nav2 when the "eat" radio button is checked */
+#eat:checked ~ .sub-nav2 {
+    display: none;
+}
+
+/* Show sub-nav2 when the "drink" radio button is checked */
+#drink:checked ~ .sub-nav2 {
+    display: block;
+}
+/* find section */
+.sub-con .find{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.food{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+#villain{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.map{
+    width: 100%;
+    height: 410px;
+}
+/* link */
+.link p{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 239, 239);
+}
+#eat:checked~.eat-label{
+    background-color: #676868;
+    color: white;
+}
+#drink:checked~.drink-label{
+    background-color: #676868;
+    color: white;
+}
+
+
+
+
+
